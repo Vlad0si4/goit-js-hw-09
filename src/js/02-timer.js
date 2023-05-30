@@ -43,9 +43,10 @@ const currentDay = new Date();
 const deadline = new Date(picker.value);
 const diff = deadline - currentDay;
     
-if (diff <= 0) {
+    if (diff <= 0) {
+  Notiflix.Notify.success('moscow is over!')
   clearInterval(timerID);
-  return
+  return;
 }
 
 const { days, hours, minutes, seconds } = convertMs(diff)
