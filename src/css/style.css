@@ -1,0 +1,13 @@
+.timer {
+  color: black;
+  display: flex;
+  gap: 20;
+  margin-top: auto;
+
+  font-size: 20px;
+
+}
+.value {
+  color: red;
+}
+
