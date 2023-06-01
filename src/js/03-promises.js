@@ -27,7 +27,7 @@ function onSubmitClicker(event) {
 
 
   for (let i = 0; i < amount; i += 1) {
-    const position =  i += 1
+    const position =  i + 1
     const delayAll = delay + step * i
   
     createPromise(position, delayAll)
@@ -42,6 +42,7 @@ function onSubmitClicker(event) {
         );
       });
   };
+  form.reset();
 }
 form.addEventListener('submit', onSubmitClicker)
 
