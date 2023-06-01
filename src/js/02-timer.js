@@ -44,7 +44,7 @@ const deadline = new Date(picker.value);
 const diff = deadline - currentDay;
     
     if (diff <= 0) {
-  Notiflix.Notify.success('moscow is over!')
+  Notiflix.Notify.success('Timer finish!')
   clearInterval(timerID);
   return;
 }
